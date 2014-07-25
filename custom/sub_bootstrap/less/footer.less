@@ -1,0 +1,54 @@
+@import "variables.less";
+
+.transition(@duration:0.2s, @ease:ease-out) {
+  -webkit-transition: all @duration @ease;
+  -moz-transition: all @duration @ease;
+  -o-transition: all @duration @ease;
+  transition: all @duration @ease;
+}
+.rotate(@rotate:5deg) {
+  -webkit-transform: rotate(@rotate);
+  -moz-transform: rotate(@rotate);
+  -o-transform: rotate(@rotate);
+}
+/**** @HAROLD footer  ****/
+.block.quan-phone, .block.quan-social {
+  width: 50%;
+  float: left;
+  height: 174px;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  padding-top: 60px;
+  .block-content {
+    color: #C1F4E4;
+  }
+
+  @media @iphone {
+    width: 100%;
+  }
+}
+.block.quan-phone {
+  background-color: @verdeclaro;
+}
+.block.quan-social {
+  background-color: #131D2E;
+  span {
+    margin: 0 15px;
+  }
+  @media @iphone {
+    span {margin: 0 5px !important;}
+  }
+  @media @ipad {
+    span {margin: 0 10px !important;}
+  }
+  a #facebooksvg, a #twittersvg, a #linkedinsvg, a #vimeosvg {
+    fill: white;
+    padding: 0 2px 0 2px;
+    .transition(0.5s);
+  }
+  a:hover #facebooksvg, a:hover #twittersvg, a:hover #linkedinsvg, a:hover #vimeosvg {
+    .transition(0.5s);
+    fill: @verdeclaro;
+  }
+}

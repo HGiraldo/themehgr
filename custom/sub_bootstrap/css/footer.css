@@ -1,0 +1,67 @@
+/**** @HAROLD footer  ****/
+.block.quan-phone,
+.block.quan-social {
+  width: 50%;
+  float: left;
+  height: 174px;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  padding-top: 60px;
+}
+.block.quan-phone .block-content,
+.block.quan-social .block-content {
+  color: #C1F4E4;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .block.quan-phone,
+  .block.quan-social {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .block.quan-phone,
+  .block.quan-social {
+    width: 100%;
+  }
+}
+.block.quan-phone {
+  background-color: #00c797;
+}
+.block.quan-social {
+  background-color: #131D2E;
+}
+.block.quan-social span {
+  margin: 0 15px;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .block.quan-social span {
+    margin: 0 5px !important;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .block.quan-social span {
+    margin: 0 10px !important;
+  }
+}
+.block.quan-social a #facebooksvg,
+.block.quan-social a #twittersvg,
+.block.quan-social a #linkedinsvg,
+.block.quan-social a #vimeosvg {
+  fill: white;
+  padding: 0 2px 0 2px;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.block.quan-social a:hover #facebooksvg,
+.block.quan-social a:hover #twittersvg,
+.block.quan-social a:hover #linkedinsvg,
+.block.quan-social a:hover #vimeosvg {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  fill: #00c797;
+}
