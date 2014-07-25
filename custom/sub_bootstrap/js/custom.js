@@ -4,7 +4,17 @@
   var flag_ani = 0;
   var flag_menu = 0;
 
-  Drupal.custom.stickyNav = function(){
+  Drupal.custom.stickyNav = function() {
+
+     if ($('#modalContent').length) {
+      $('body').css('overflow', 'hidden');
+      $('body').css('height', '100%');
+     }
+     else {
+      $('body').css('overflow', 'auto');
+      $('body').css('height', 'auto');
+     }
+
      if($(window).width() > 991) {
       var heightNav = $('#navbar').height();
       var scrollTop = $(window).scrollTop();
