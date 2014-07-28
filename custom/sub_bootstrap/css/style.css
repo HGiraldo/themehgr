@@ -516,7 +516,7 @@ input[type="submit"] .pagination li a:hover,
 .navbar-default .navbar-toggle {
   border-color: transparent;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 991px) {
   .view-nuestro-proceso .item-list li.views-row-odd .img-content {
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
@@ -585,12 +585,12 @@ input[type="submit"] .pagination li a:hover,
 }
 .view-nuestro-proceso .views-row.views-row.views-row-odd .main-content {
   float: right;
-  width: 60%;
+  width: 65%;
   margin-left: 0;
 }
 .view-nuestro-proceso .views-row.views-row.views-row-even .main-content {
   float: left;
-  width: 60%;
+  width: 65%;
   margin-right: 3%;
 }
 .view-nuestro-proceso .views-row.views-row.views-row-even .img-content {
@@ -919,8 +919,11 @@ a p {
   float: left;
 }
 #block-block-1 .block-content .phone-number {
-  margin: 5px 10px;
+  margin: 15px 10px;
   font-family: 'proxima_nova_rgbold';
+}
+#block-block-1 .block-content .phone-number a {
+  color: #fff;
 }
 #block-block-1 .block-content .ico-tel #Layer_1 {
   fill: #117A6A;
@@ -1069,8 +1072,8 @@ input:focus,
   }
   .view-nuestro-proceso .views-row .img-content {
     border-radius: 220px;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
   }
   .views-slideshow-controls-text > span a,
   .pager li a {
@@ -1087,8 +1090,11 @@ input:focus,
     margin: 0 10px;
   }
   #block-block-1 .block-content .phone-number {
-    margin: 0px 5px;
+    margin: 15px 5px;
     font-family: 'proxima_novalight';
+  }
+  #block-block-1 .block-content .phone-number a {
+    color: #fff;
   }
   #navbar.sticky .navbar-header {
     padding: 5px 0 0 0;
