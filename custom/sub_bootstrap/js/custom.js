@@ -6,13 +6,14 @@
 
   Drupal.custom.stickyNav = function() {
 
-     // if ($('#modalContent').length) {
-     //  $('body').css('overflow', 'hidden');
-     //  $('body').css('height', '100%');
-     //  $('#modalContent').css('overflow', 'scroll');
-     //  $('#modalContent').css('height', 'auto');
-     //  $('#modalContent').css('z-index', '20000');
-     // }
+     if ($('#modalContent').length) {
+      $('#modalContent').css('overflow', 'visible');
+      // $('body').css('overflow', 'hidden');
+      // $('body').css('height', '100%');
+      // $('#modalContent').css('overflow', 'scroll');
+      // $('#modalContent').css('height', 'auto');
+      // $('#modalContent').css('z-index', '20000');
+     }
      // else {
      //  $('#modalBackdrop').css('overflow', 'auto');
      //  $('#modalBackdrop').css('height', 'auto');
