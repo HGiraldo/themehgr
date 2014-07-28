@@ -1442,6 +1442,10 @@ input:focus,
   height: auto;
   margin-bottom: 6%;
 }
+#modalContent {
+  overflow: visible!important;
+  height: auto!important;
+}
 .node-partner-post {
   overflow: hidden;
   margin-bottom: 5%;

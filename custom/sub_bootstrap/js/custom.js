@@ -5,20 +5,6 @@
   var flag_menu = 0;
 
   Drupal.custom.stickyNav = function() {
-
-     if ($('#modalContent').length) {
-      $('#modalContent').css('overflow', 'visible');
-      // $('body').css('overflow', 'hidden');
-      // $('body').css('height', '100%');
-      // $('#modalContent').css('overflow', 'scroll');
-      // $('#modalContent').css('height', 'auto');
-      // $('#modalContent').css('z-index', '20000');
-     }
-     // else {
-     //  $('#modalBackdrop').css('overflow', 'auto');
-     //  $('#modalBackdrop').css('height', 'auto');
-     // }
-
      if($(window).width() > 991) {
       var heightNav = $('#navbar').height();
       var scrollTop = $(window).scrollTop();
@@ -55,10 +41,44 @@
 
   Drupal.behaviors.custom = {
     attach:function(context, settings) {
+      // Lock Scroll.
+      // if ($('#modalContent').length) {
+      //    $('body').css('overflow', 'hidden');
+      //    $('body').css('height', '100%');
+      //  }
+      //  else {
+      //    $('body').css('overflow', 'auto');
+      //    $('body').css('height', 'auto');
+      //  }
+      if (location.hash) {
+        offset = Number($(location.hash).offset().top)-Number(100);
+        $('html, body').animate({
+          scrollTop: offset
+        }, 2000);
+        location.hash = '';
+        window.location.href.replace('/#.*/','');
+      };
       // ANCLAS
+      $('#block-menu-menu-menu-principal .block-content a').click(function (event) {
+        if ($(this).attr('name').length) {
+          $this_link = $(this);
+          if ($('body').hasClass('front')) {
+            event.preventDefault();
+            offset = Number($("#" + $this_link.attr('name')).offset().top)-Number(100);
+            $('html, body').animate({
+                scrollTop: offset
+            }, 2000);
+          }
+          else {
+            event.preventDefault();
+            window.location.replace($this_link.attr('href') + "#" + $this_link.attr('name'));
+          }
+        };
+      });
+
       $('a.cotiza').click(function(e) {
         e.preventDefault();
-        enlace  = $(this).attr('href');
+        enlace = $(this).attr('href');
         offset = Number($(enlace).offset().top)-Number(100);
         $('html, body').animate({
             scrollTop: offset
