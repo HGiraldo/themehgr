@@ -399,6 +399,13 @@ input[type="submit"] .pagination li a:hover,
 #block-devel-execute-php {
   clear: both;
 }
+#webform-component-terminos-y-condiciones .form-type-radio {
+  float: left;
+  margin-right: 5px;
+}
+#webform-client-form-8 .btn-default.form-submit {
+  float: right;
+}
 .multicolor {
   position: relative;
 }
@@ -1437,4 +1444,12 @@ input:focus,
 }
 .node-partner-post .field-name-field-complement {
   font-size: 1.5em;
+}
+.webform-component-radios #edit-submitted-terminos-y-condiciones,
+.webform-component-radios .description {
+  display: block;
+  float: left;
+}
+.webform-component-radios .description {
+  margin-left: 5px;
 }

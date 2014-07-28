@@ -6,14 +6,17 @@
 
   Drupal.custom.stickyNav = function() {
 
-     if ($('#modalContent').length) {
-      $('body').css('overflow', 'hidden');
-      $('body').css('height', '100%');
-     }
-     else {
-      $('body').css('overflow', 'auto');
-      $('body').css('height', 'auto');
-     }
+     // if ($('#modalContent').length) {
+     //  $('body').css('overflow', 'hidden');
+     //  $('body').css('height', '100%');
+     //  $('#modalContent').css('overflow', 'scroll');
+     //  $('#modalContent').css('height', 'auto');
+     //  $('#modalContent').css('z-index', '20000');
+     // }
+     // else {
+     //  $('#modalBackdrop').css('overflow', 'auto');
+     //  $('#modalBackdrop').css('height', 'auto');
+     // }
 
      if($(window).width() > 991) {
       var heightNav = $('#navbar').height();
