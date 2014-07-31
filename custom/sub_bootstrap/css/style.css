@@ -1473,7 +1473,7 @@ input:focus,
   .pager li a {
     width: 56px;
     height: 145px;
-    top: 38%;
+    top: 150px;
   }
   .views-slideshow-controls-text > span.views-slideshow-controls-text-previous a,
   .pager li.prev a {
