@@ -1159,7 +1159,82 @@ input:focus,
     margin-top: 0;
   }
 }
+.block:first-child h2.block-title {
+  margin-top: 20px;
+}
+#wrapper-replace h2 {
+  display: none;
+}
+#wrapper-replace .field.field-name-field-image {
+  margin: 0;
+}
+#wrapper-replace .field.field-name-field-image img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 6%;
+}
+#modalContent {
+  overflow: visible!important;
+  height: auto!important;
+}
+.node-partner-post {
+  overflow: hidden;
+  margin-bottom: 5%;
+}
+.node-partner-post .field-name-quan-title,
+.node-partner-post .field-name-quan-autor {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'proxima_nova_rgbold';
+  font-size: 2.7em;
+  color: #313131;
+  margin: 1% 5% 1% 5%;
+  line-height: 1.1;
+}
+.node-partner-post .field-name-field-complement {
+  font-size: 1.5em;
+  margin-bottom: 3%;
+}
+.node-smt-quan {
+  overflow: hidden;
+  margin-bottom: 5%;
+}
+.node-smt-quan .field-name-quan-title,
+.node-smt-quan .field-name-quan-autor {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'proxima_nova_rgbold';
+  font-size: 2.7em;
+  color: #313131;
+  margin: 1% 5% 1% 5%;
+  line-height: 1.1;
+}
+.node-smt-quan .field-name-field-complement {
+  font-size: 1.5em;
+  margin-bottom: 3%;
+}
+.webform-component-radios #edit-submitted-terminos-y-condiciones,
+.webform-component-radios .description {
+  display: block;
+  float: left;
+}
+.webform-component-radios .description {
+  margin-left: 5px;
+}
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .node-partner-post .field-name-quan-title,
+  .node-partner-post .field-name-quan-autor,
+  .node-smt-quan .field-name-quan-title,
+  .node-smt-quan .field-name-quan-autor {
+    font-size: 2em;
+    line-height: 1;
+  }
+  #views_slideshow_cycle_main_frases_celebres-block {
+    width: 100%;
+    font-size: 0.9em;
+  }
+  .view-frases-celebres .text {
+    background: url("../images/ico-comillas-open-mobile.png") no-repeat scroll left 20px transparent;
+    padding: 45px 0 10px 60px;
+  }
   #block-block-1 {
     padding: 3% 2%;
   }
@@ -1430,42 +1505,4 @@ input:focus,
   p {
     font-size: 18px;
   }
-}
-#wrapper-replace h2 {
-  display: none;
-}
-#wrapper-replace .field.field-name-field-image {
-  margin: 0;
-}
-#wrapper-replace .field.field-name-field-image img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 6%;
-}
-#modalContent {
-  overflow: visible!important;
-  height: auto!important;
-}
-.node-partner-post {
-  overflow: hidden;
-  margin-bottom: 5%;
-}
-.node-partner-post .field-name-quan-title,
-.node-partner-post .field-name-quan-autor {
-  -webkit-font-smoothing: antialiased;
-  font-family: 'proxima_nova_rgbold';
-  font-size: 2.7em;
-  color: #313131;
-  margin: 1% 5% 1% 5%;
-}
-.node-partner-post .field-name-field-complement {
-  font-size: 1.5em;
-}
-.webform-component-radios #edit-submitted-terminos-y-condiciones,
-.webform-component-radios .description {
-  display: block;
-  float: left;
-}
-.webform-component-radios .description {
-  margin-left: 5px;
 }
