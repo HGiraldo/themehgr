@@ -1513,8 +1513,9 @@ input:focus,
 div.be-social {
   border-top: 1px solid #e0e0e0;
   float: left;
-  width: 100%;
+  width: 70%;
   margin-top: 4%;
+  margin-left: 13%;
 }
 div.be-social .share-wrapper {
   margin: 0 auto;
