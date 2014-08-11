@@ -1177,6 +1177,9 @@ input:focus,
   overflow: visible!important;
   height: auto!important;
 }
+#modalContent .ctools-modal-dialog {
+  max-width: 800px!important;
+}
 .node-partner-post {
   overflow: hidden;
   margin-bottom: 5%;
@@ -1548,32 +1551,40 @@ body.not-front.page-node div.main-container {
   margin-bottom: 5%;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  body.page-node .pagination {
+  body.page-node .pagination,
+  div.view .pagination {
     width: 100%;
   }
-  body.page-node .pagination li {
+  body.page-node .pagination li,
+  div.view .pagination li {
     display: none;
   }
-  body.page-node .pagination li.prev {
+  body.page-node .pagination li.prev,
+  div.view .pagination li.prev {
     float: left;
     display: block;
     width: 40%;
   }
-  body.page-node .pagination li.prev a {
+  body.page-node .pagination li.prev a,
+  div.view .pagination li.prev a {
     background: url("../images/ico-vermas-left.png") no-repeat 13% -94px transparent;
   }
-  body.page-node .pagination li.next {
+  body.page-node .pagination li.next,
+  div.view .pagination li.next {
     display: block;
     width: 40%;
     float: right;
   }
-  body.page-node .pagination li.next a {
+  body.page-node .pagination li.next a,
+  div.view .pagination li.next a {
     background: url("../images/ico-vermas.png") no-repeat 90% 14px transparent;
   }
-  body.page-node .pagination li a {
+  body.page-node .pagination li a,
+  div.view .pagination li a {
     font-size: 20px;
   }
-  body.page-node .pagination li a:hover {
+  body.page-node .pagination li a:hover,
+  div.view .pagination li a:hover {
     background-color: #10BF97;
   }
 }
