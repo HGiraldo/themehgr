@@ -1543,6 +1543,9 @@ div.be-social .social-b a {
 div.be-social .social-b a:hover path {
   fill: #161E2C!important;
 }
+body.front #navbar {
+  background: #161E2C;
+}
 body.not-front.page-node #navbar {
   background: #161E2C;
 }
@@ -1587,4 +1590,9 @@ body.not-front.page-node div.main-container {
   div.view .pagination li a:hover {
     background-color: #10BF97;
   }
+}
+.bg_white {
+  background-image: url("../images/fondo.jpg");
+  background-attachment: fixed;
+  background-position: 46% 80px;
 }
