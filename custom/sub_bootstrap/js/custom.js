@@ -64,7 +64,12 @@
           $this_link = $(this);
           if ($('body').hasClass('front')) {
             event.preventDefault();
-            offset = Number($("#" + $this_link.attr('name')).offset().top)-Number(100);
+            var sum_offset = $this_link.parent().parent().height();
+            if (Number(sum_offset) < 100) {
+              sum_offset = 100;
+            };
+            offset = Number($("#" + $this_link.attr('name')).offset().top)-Number(sum_offset);
+
             $('html, body').animate({
                 scrollTop: offset
             }, 2000);
