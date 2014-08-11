@@ -800,12 +800,12 @@ input[type="submit"] .pagination li a:hover,
   color: #fff;
   line-height: 1;
   width: 65%;
-  text-shadow: 1px 0px 1px #bdbdbd;
+  text-shadow: 1px 1px 3px black;
 }
 .view-list-nodes .complement {
   font-size: 1.8em;
   color: #fff;
-  text-shadow: 1px 0px 1px #bdbdbd;
+  text-shadow: 1px 0px 1px black;
 }
 .view-servicios-adicionales ul li {
   width: 30%;
@@ -1546,4 +1546,34 @@ body.not-front.page-node #navbar {
 body.not-front.page-node div.main-container {
   margin-top: 10%;
   margin-bottom: 5%;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  body.page-node .pagination {
+    width: 100%;
+  }
+  body.page-node .pagination li {
+    display: none;
+  }
+  body.page-node .pagination li.prev {
+    float: left;
+    display: block;
+    width: 40%;
+  }
+  body.page-node .pagination li.prev a {
+    background: url("../images/ico-vermas-left.png") no-repeat 13% -94px transparent;
+  }
+  body.page-node .pagination li.next {
+    display: block;
+    width: 40%;
+    float: right;
+  }
+  body.page-node .pagination li.next a {
+    background: url("../images/ico-vermas.png") no-repeat 90% 14px transparent;
+  }
+  body.page-node .pagination li a {
+    font-size: 20px;
+  }
+  body.page-node .pagination li a:hover {
+    background-color: #10BF97;
+  }
 }
