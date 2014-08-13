@@ -1545,6 +1545,8 @@ div.be-social .social-b a:hover path {
 }
 body.front #navbar {
   background: #161E2C;
+  background-image: url("../images/negro-30.png");
+  background-attachment: fixed;
 }
 body.not-front.page-node #navbar {
   background: #161E2C;
@@ -1591,8 +1593,13 @@ body.not-front.page-node div.main-container {
     background-color: #10BF97;
   }
 }
+.bg_blue {
+  background-image: url("../images/negro-30.png");
+  background-attachment: fixed;
+  background-position: 46% 80px;
+}
 .bg_white {
-  background-image: url("../images/fondo.jpg");
+  background-image: url("../images/blanco-30.png");
   background-attachment: fixed;
   background-position: 46% 80px;
 }

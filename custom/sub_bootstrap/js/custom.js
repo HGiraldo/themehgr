@@ -6,6 +6,8 @@
 
   Drupal.custom.stickyNav = function() {
      if($(window).width() > 991) {
+
+
       var heightNav = $('#navbar').height();
       var scrollTop = $(window).scrollTop();
       var stickyNavTop = $('#navbar').offset().top+100;
@@ -15,6 +17,25 @@
       else {
         $('#navbar').removeClass('sticky');
       }
+
+      // Paralax
+      var move = (scrollTop / 2);
+      $('.content_quan_region.bg_blue').css('background-position', move + "%" + " " + move + "%");
+      var move = (scrollTop / 2) * (-1);
+      $('.content_process_region.bg_white').css('background-position', move + "%" + " " + move + "px");
+      var move = (scrollTop / 4);
+      $('.content_services_region.bg_blue').css('background-position', move + "%" + " " + move + "px");
+      var move = (scrollTop / 5) * (-1);
+      $('.content_clients_region.bg_white').css('background-position', move + "%" + " " + move + "%");
+      var move = (scrollTop / 6);
+      $('.content_slide_region.bg_blue').css('background-position', move + "%" + " " + move + "px");
+      var move = (scrollTop / 7) * (-1);
+      $('.content_people_region.bg_white').css('background-position', move + "%" + " " + move + "px");
+      var move = (scrollTop / 8);
+      $('.content_blog_region.bg_blue').css('background-position', move + "%" + " " + move + "%");
+      var move = (scrollTop / 9) * (-1);
+      $('.content_contact_region.bg_white').css('background-position', move + "%" + " " + move + "px");
+
     }
     $( ".element-mobile" ).click(function() {
       if(flag_menu == 0){
