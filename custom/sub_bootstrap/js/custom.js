@@ -113,6 +113,12 @@
 
       // MODALS.
       $('#modalContent .ctools-modal-dialog, #modalContent .modal-content #modal-content').css('height', 'auto');
+      // Close Modal Outside window.
+      $('#modalBackdrop').click(function() {
+        $(this).remove();
+        $('#modalContent').remove();
+      });
+
       // Procesar Menu.
       Drupal.custom.stickyNav();
       // Add class responsive for LOGO.
