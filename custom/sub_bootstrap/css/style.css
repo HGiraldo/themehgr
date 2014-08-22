@@ -1603,3 +1603,17 @@ body.not-front.page-node div.main-container {
   background-attachment: fixed;
   background-position: 46% 80px;
 }
+#navbar.sticky {
+  height: 50px;
+}
+#navbar.sticky .menu.nav a {
+  font-size: 1.2em;
+}
+#navbar.sticky .logo img {
+  width: 70%;
+}
+#navbar.sticky .navbar-brand {
+  font-size: 20px;
+  padding: 10px;
+  margin-left: -30px;
+}
