@@ -117,6 +117,8 @@
       Drupal.custom.stickyNav();
       // Add class responsive for LOGO.
       $('.navbar-header .logo img').addClass('img-responsive');
+      // Add class responsive for images in nodes.
+      $('div.node .field img').addClass('img-responsive').css('display', 'inline');
       // Ocultar en HOME.
       $('body.front a.hide-in-home').parent().hide();
 
