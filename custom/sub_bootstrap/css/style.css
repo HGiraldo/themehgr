@@ -33,7 +33,7 @@
     margin: 0 5px !important;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px;) {
+@media screen and (min-width: 768px) and (max-width: 1024px;) {
   .block.quan-social span {
     margin: 0 10px !important;
   }
@@ -523,7 +523,7 @@ input[type="submit"] .pagination li a:hover,
 .navbar-default .navbar-toggle {
   border-color: transparent;
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 1024px) {
   .view-nuestro-proceso .item-list li.views-row-odd .img-content {
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;

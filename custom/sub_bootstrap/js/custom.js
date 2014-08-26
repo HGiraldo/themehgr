@@ -5,7 +5,7 @@
   var flag_menu = 0;
 
   Drupal.custom.stickyNav = function() {
-     if($(window).width() > 991) {
+     if($(window).width() > 1024) {
 
 
       var heightNav = $('#navbar').height();
