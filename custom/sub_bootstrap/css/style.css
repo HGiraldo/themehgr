@@ -1188,10 +1188,16 @@ input:focus,
 .node-partner-post .field-name-quan-autor {
   -webkit-font-smoothing: antialiased;
   font-family: 'proxima_nova_rgbold';
-  font-size: 2.7em;
   color: #313131;
   margin: 1% 5% 1% 5%;
   line-height: 1.1;
+}
+.node-partner-post .field-name-quan-title {
+  font-size: 2em;
+}
+.node-partner-post .field-name-quan-autor {
+  font-size: 1.5em;
+  font-style: italic;
 }
 .node-partner-post .field-name-field-complement {
   font-size: 1.5em;
@@ -1205,10 +1211,16 @@ input:focus,
 .node-smt-quan .field-name-quan-autor {
   -webkit-font-smoothing: antialiased;
   font-family: 'proxima_nova_rgbold';
-  font-size: 2.7em;
   color: #313131;
   margin: 1% 5% 1% 5%;
   line-height: 1.1;
+}
+.node-smt-quan .field-name-quan-title {
+  font-size: 2em;
+}
+.node-smt-quan .field-name-quan-autor {
+  font-size: 1.5em;
+  font-style: italic;
 }
 .node-smt-quan .field-name-field-complement {
   font-size: 1.5em;
@@ -1224,10 +1236,13 @@ input:focus,
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .node-partner-post .field-name-quan-title,
-  .node-partner-post .field-name-quan-autor,
-  .node-smt-quan .field-name-quan-title,
-  .node-smt-quan .field-name-quan-autor {
-    font-size: 2em;
+  .node-smt-quan .field-name-quan-title {
+    font-size: 1.3em;
+    line-height: 1;
+  }
+  .node-smt-quan .field-name-quan-autor,
+  .node-partner-post .field-name-quan-autor {
+    font-size: 1em;
     line-height: 1;
   }
   #views_slideshow_cycle_main_frases_celebres-block {
