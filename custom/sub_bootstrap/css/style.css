@@ -59,7 +59,7 @@
   transition: all 0.5s ease-out;
   fill: #00c797;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   .container {
     width: 960px;
   }
@@ -523,7 +523,7 @@ input[type="submit"] .pagination li a:hover,
 .navbar-default .navbar-toggle {
   border-color: transparent;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .view-nuestro-proceso .item-list li.views-row-odd .img-content {
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
@@ -1064,7 +1064,7 @@ input:focus,
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .region-content-slide p {
     font-size: 1.1em;
   }
@@ -1486,7 +1486,7 @@ input:focus,
     right: -10px;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   .views-slideshow-controls-text > span a,
   .pager li a {
     width: 56px;
